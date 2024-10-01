@@ -22,8 +22,7 @@ let minutesPerHour = 60
 let hoursPerDay = 24
 let daysPerYear = 365;
 
-console.log("OUR UNIVERSE seconds in a year", secondsPerMinute * minutesPerHour * hoursPerDay * daysPerYear)
-
+console.log("OUR UNIVERSE seconds in a year", (secondsPerMinute * minutesPerHour * hoursPerDay * daysPerYear))
 
 secondsPerMinute = 50
 
@@ -63,6 +62,15 @@ console.log("current score is: " + score)
 
 let price = 1.00
 let discount = 0.10
+let discountedPrice = price * discount;
+let customerCash = 1
 
-console.log("Your total is: " + (price - (price * discount)))
+console.log("Your total is: " + (price - price * discount))
+console.log("price: " + price)
 console.log("Your discont was " + discount * 100 + "%")
+
+if (customerCash < discountedPrice) {
+    console.log("You don't have enough money!")
+} else {
+    console.log("You have enough money!")
+}
